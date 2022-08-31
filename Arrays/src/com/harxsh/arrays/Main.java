@@ -29,7 +29,7 @@ public class Main {
             System.out.println(intArray[i]);
         }
 
-        // find index of number
+        // find index of given number
         // initially index is -1 which represent number is not in the array
         int index = -1;
         int number = 7;
