@@ -1,4 +1,4 @@
-package com.harxsh.arrays.remove;
+package com.harxsh.arrays.remove.element;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;
