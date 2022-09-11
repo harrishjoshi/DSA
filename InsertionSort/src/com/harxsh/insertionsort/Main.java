@@ -35,5 +35,12 @@ public class Main {
         }
 
         System.out.println("Sorted arr: " + Arrays.toString(arr));
+
+        /*
+         * Stability in Sorting Algorithms:
+         * The stability of a sorting algorithm is concerned with how the algorithm treats equal (or repeated) elements.
+         * Stable sorting algorithm preserve the relative order of equal elements, while unstable sorting algorithms don't.
+         * In other words stable sorting maintains the position of two equals elements relative to one another.
+         */
     }
 }
