@@ -10,6 +10,15 @@ public class Main {
 
         /*
          * Working:
+         * 1. The first element in the array is assumed to be sorted.
+         * Take the second element and store it separately in newElement.
+         *  Compare newElement with the first element. If the first element is greater than newElement,
+         *  then newElement is placed in front of the first element.
+         * 2. Now, the first two elements are sorted.
+         *  Take the third element and compare it with the elements on the left of it.
+         *  placed it just behind the element smaller than it. If there is no element smaller than it,
+         *  then place it at the beginning of the array.
+         * 3. Similarly, place every unsorted element at its correct position.
          */
 
         // loop to access array element (we assume first index is at sorted position)
@@ -21,6 +30,7 @@ public class Main {
             for (i = lastUnsortedIndex; i > 0 && arr[i - 1] > newElement; i--)
                 arr[i] = arr[i - 1];
 
+            // place newElement at after the element just smaller than it
             arr[i] = newElement;
         }
 
