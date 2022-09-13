@@ -38,6 +38,7 @@ public class Main {
         System.out.println("Unsorted arr: " + Arrays.toString(arr));
 
         // Rearrange elements at each n/2, n/4, n/8, ... intervals
+        // This is the interval sequence.
         for (int interval = arr.length / 2; interval > 0; interval /= 2) {
             // do a gap insertion sort for this interval size
             for (int i = interval; i < arr.length; i++) {
